@@ -28,7 +28,6 @@ var Nav= `
             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
               <span class="dropdown-item">Deer</span>
               <span class="dropdown-item">Kidco</span>
-              <span class="dropdown-item">Bahadur </span>
               <span class="dropdown-item">Dollar</span>
               <span class="dropdown-item">Piano</span>
               <span class="dropdown-item">Picaso</span>

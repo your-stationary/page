@@ -1,5 +1,12 @@
 /* Font  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* varables  and Global classes  */
+.border-rounded{border-radius: 1000px;}
+.h1{font-size: 3.5rem !important;}
+.h6{font-size: 14px !important;}
+.bg-dark{background-color: rgb(44, 44, 44) !important;}
+
 *{
     margin:0;
     padding:0;
@@ -7,15 +14,9 @@
     outline:none;
     font-family: 'Montserrat', sans-serif;
 }
-/* varables  and Global classes  */
-.border-rounded{
-border-radius: 1000px;
-}
-.h6{
-    font-size: 14px !important;
-}
-.bg-dark{
-    background-color: rgb(44, 44, 44) !important;
+
+body{
+    background-color: rgb(245, 245, 245);
 }
 
 header img{
@@ -50,7 +51,20 @@ header img{
 .navbar .nav-item .dropdown-menu .dropdown-item:hover{
     background-color: rgba(202, 202, 202, 0.322);
 }
-
+.timer-span{
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+.sale-banner{
+    overflow: hidden;
+}
+.view-more{
+    border:2px solid #0275d8;
+}
+.view-more:hover{
+    background-color: rgba(210, 105, 30, 0);
+    color: #0275d8;
+}
 /* media query */
 
 @media only screen and (max-width:845px){
