@@ -142,11 +142,11 @@ header img{
     z-index: 1;
 }
 .view-more{
-    border:2px solid #0275d8;
+    border:2px solid #007BFF;
 }
 .view-more:hover{
     background-color: rgba(210, 105, 30, 0);
-    color: #0275d8;
+    color: #007BFF;
 }
 /* media query */
 @media only screen and (max-width:700px){
