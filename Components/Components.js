@@ -25,10 +25,10 @@ var Nav= `
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Brands
             </a>
-            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <span class="dropdown-item">Deer</span>
-              <span class="dropdown-item">Kidco</span>
               <span class="dropdown-item">Dollar</span>
+              <span class="dropdown-item">Giatto</span>
               <span class="dropdown-item">Piano</span>
               <span class="dropdown-item">Picaso</span>
               <span class="dropdown-item">Nike</span>
@@ -39,7 +39,7 @@ var Nav= `
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Products
             </a>
-            <div class="dropdown-menu bg-dark text-wrap" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu  text-wrap" aria-labelledby="navbarDropdownMenuLink">
                 <span class="dropdown-item">Staplers</span>
                 <span class="dropdown-item">Bags</span>
                 <span class="dropdown-item">Card sheet</span>
@@ -69,4 +69,28 @@ var Nav= `
       </ul>
     </div>
 
+`
+
+var Footer = `
+<div class="d-flex flex-column pt-5">
+  <img src="images/logo.png" >
+  <span class="text-muted pl-3 mt-3">Contact Us On </span> 
+  <div class="text-muted pl-3 h5">
+   <i class="fab fa-facebook px-1"></i>
+   <i class="fab fa-whatsapp px-1"></i>
+   <i class="far fa-envelope px-1"></i>
+  </div>
+</div>
+ <div class="d-flex flex-column text-muted pt-5 ">
+   <a href="" class="footer-links">Home</a>
+   <a href="" class="footer-links">Contact Us</a>
+   <a href="" class="footer-links">Contact Us</a>
+   <a href="" class="footer-links">Privacy Policy</a>
+ </div>
+ <div class="text-white d-flex flex-wrap flex-column pt-5">
+   <label class="text-muted-3">Enter Your Email Address</label>
+   <input type="text" placeholder="News Letter">
+   <span class="text-muted-2 mt-2">Call Now</span>
+   <span class="text-muted-2 ">000 348 723</span>
+ </div>
 `

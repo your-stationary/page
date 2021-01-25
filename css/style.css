@@ -10,6 +10,8 @@
 .like-color{color: rgb(160, 160, 160);}
 .dark-pink{color:rgba(255, 2, 120, 0.733);}
 .text-success{color: rgb(3, 204, 3) !important;}
+.text-muted-2{color: rgb(126, 126, 126);}
+.text-muted-3{color: rgb(196, 196, 196);}
 *{
     margin:0;
     padding:0;
@@ -36,21 +38,28 @@ header img{
     width: 80%;
 }
 .nav-links{
-    color:white;
+    color:rgb(68, 68, 68);
     text-decoration: none;
     transition: .3s;
 }
+.navbar{
+    background-color: rgb(248, 248, 248)8) !important;
+}
 .nav-links:hover{
-    color: #cecece !important;
+    color: #525252 !important;
     text-decoration: none;
 }
-
+.navbar .nav-item:hover{
+    color: black !important;
+}
 .navbar .nav-item .dropdown-menu .dropdown-item{
-    color: white;
+    color: rgb(41, 41, 41);
     cursor: pointer;
 }
 .navbar .nav-item .dropdown-menu .dropdown-item:hover{
-    background-color: rgba(202, 202, 202, 0.322);
+    background-color: rgb(0, 110, 255);
+    color: white;
+    font-weight: bold;
 }
 .timer-span{
     background-color: rgb(231, 231, 231);
@@ -127,7 +136,7 @@ header img{
 .sale-banner{
     overflow: hidden;
     position: relative;
-    margin-bottom: 500px;
+    margin-bottom: 50px;
 }
 .sale-banner::after{
     content: "";
@@ -147,6 +156,29 @@ header img{
 .view-more:hover{
     background-color: rgba(210, 105, 30, 0);
     color: #007BFF;
+}
+.footer{
+    background-color: rgb(22, 22, 22);
+}
+.footer img {
+    filter: invert(100%);
+    width: 200px;
+}
+.footer a{
+    color: rgb(179, 179, 179);
+    line-height: 40px;
+}
+.footer a:hover{
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+}
+.footer input{
+    background-color: rgb(48, 48, 48);
+    border: none;
+    border-radius:4px;
+    padding: 10px ;
+    color: white;
+
 }
 /* media query */
 @media only screen and (max-width:700px){
@@ -170,7 +202,7 @@ header img{
 }
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ color: rgb(255, 255, 255);  }
+	.navbar .nav-item:hover .nav-link{ color: rgb(61, 61, 61)}
 	.navbar .nav-item:hover .dropdown-menu{ display: block ;}
 	.navbar .nav-item .dropdown-menu{ margin-top:0px; }
 }
