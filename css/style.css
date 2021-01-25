@@ -5,8 +5,11 @@
 .border-rounded{border-radius: 1000px;}
 .h1{font-size: 3.5rem !important;}
 .h6{font-size: 14px !important;}
+.h7{font-size: 12px; color: rgb(163, 163, 163) !important;}
 .bg-dark{background-color: rgb(44, 44, 44) !important;}
-
+.like-color{color: rgb(160, 160, 160);}
+.dark-pink{color:rgba(255, 2, 120, 0.733);}
+.text-success{color: rgb(3, 204, 3) !important;}
 *{
     margin:0;
     padding:0;
@@ -15,9 +18,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: rgb(245, 245, 245);
-}
+
 
 header img{
     width: 250px;
@@ -55,8 +56,90 @@ header img{
     background-color: rgb(231, 231, 231);
     border-radius: 5px;
 }
+.slider{
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+}
+.fa-arrow-left{
+    left: 0 !important;
+}
+.fa-arrow-right{
+    right: 0 !important;
+}
+.fa-arrow-right,.fa-arrow-left{
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+.fa-arrow-right:hover,.fa-arrow-left:hover{
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.slider::-webkit-scrollbar{
+    appearance: none;
+}
+.ex-heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ex-heading span{
+    border-bottom:4px solid rgb(0, 162, 255) ;
+    width: 250px;
+    margin-top: 2px;
+}
+.product-div{
+    width: 250px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
+    flex-shrink: 0;
+    margin: 20px;
+}
+.product-text{
+    color: rgba(145, 145, 145, 0.767);
+    line-height: 17px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.product-div:hover .product-img img{
+    transform:scale(1.05);
+}
+.product-img{
+    width: 100%;
+    overflow: hidden;
+}
+.product-img img{
+    width: 100%;
+    transition: 1s;
+}
+
+.like-sec{
+    transition: .4s;
+}
+.like-sec:hover{
+    color:rgb(255, 0, 106) !important;
+}
 .sale-banner{
     overflow: hidden;
+    position: relative;
+    margin-bottom: 500px;
+}
+.sale-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg ,white, rgba(0, 0, 0, 0)  , white);
+}
+.sale-text{
+    z-index: 1;
 }
 .view-more{
     border:2px solid #0275d8;
@@ -66,7 +149,11 @@ header img{
     color: #0275d8;
 }
 /* media query */
-
+@media only screen and (max-width:700px){
+    .fa-arrow-left,.fa-arrow-right{
+        display: none;
+    }
+}
 @media only screen and (max-width:845px){
   .logo{
     width: 100%;
