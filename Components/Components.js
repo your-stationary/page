@@ -30,7 +30,7 @@ var Nav= `
               <span class="dropdown-item">Dollar</span>
               <span class="dropdown-item">Giatto</span>
               <span class="dropdown-item">Piano</span>
-              <span class="dropdown-item">Picaso</span>
+              <span class="dropdown-item">Picasso</span>
               <span class="dropdown-item">Nike</span>
               <span class="dropdown-item">Puma</span>
             </div>
@@ -42,19 +42,12 @@ var Nav= `
             <div class="dropdown-menu  text-wrap" aria-labelledby="navbarDropdownMenuLink">
                 <span class="dropdown-item">Staplers</span>
                 <span class="dropdown-item">Bags</span>
-                <span class="dropdown-item">Card sheet</span>
                 <span class="dropdown-item">Pen</span>
-                <span class="dropdown-item">Ink remover</span>
-                <span class="dropdown-item">Register</span>
+                <span class="dropdown-item">Pencil</span>
                 <span class="dropdown-item">Pointer </span>
                 <span class="dropdown-item">Glitter </span>
                 <span class="dropdown-item">Markers </span>
-                <span class="dropdown-item">Spray Paint</span>
-                <span class="dropdown-item">Water Bottles</span>
-                <span class="dropdown-item">Do Clay</span>
-                <span class="dropdown-item">Scissor</span>
                 <span class="dropdown-item">scale</span>
-                <span class="dropdown-item">sticker</span>
                 <span class="dropdown-item">water color</span>
             </div>
           </li>
