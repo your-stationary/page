@@ -21,11 +21,20 @@
     body {
         background-color: rgb(245, 243, 243);
     }
-    .fa-map-marker{
+
+    .fa-map-marker,
+    .fa-phone,.fa-envelope {
         background-color: rgb(42, 42, 42);
         color: white;
         padding: 12px 15px;
         border-radius: 50%;
+    }
+
+    .fa-phone {
+        padding: 17px;
+    }
+    .fa-envelope{
+        padding: 17px;
     }
 </style>
 
@@ -36,16 +45,27 @@
         apart from the flock! </p>
 
     <div class="row">
-        <div class="col-6">
-            <div class=" d-flex ">
+        <div class="col-6 p-5">
+            <div class=" d-flex ml-5 ">
                 <div> <i class="fa fa-map-marker h3" aria-hidden="true"></i></div>
                 <div class="d-flex flex-column ml-3"> <span class="h4 text-primary"> Address </span>
                     <span> 461 sugar camp road, <br> karachi pakistan,O21</span>
                 </div>
             </div>
-
+            <div class="d-flex mt-5 ml-5">
+                <div> <i class="fa fa-phone" aria-hidden="true"> </i></div>
+                <div class=" d-flex flex-column ml-3"> <span class="h4 text-primary"> Phone </span>
+                    <span> 507-475-6094 </span>
+                </div>
+            </div>
+            <div class=" d-flex mt-5 ml-5">
+                <div> <i class="far fa-envelope"></i></div>
+                <div class="d-flex flex-column ml-3 "> <span class="h4 text-primary"> E mail </span>
+                    <span> yourstationary@gmail.com </span>
+                </div>
+            </div>
         </div>
-        <div class="col-6"></div>
+        <div class="col-6"> </div>
     </div>
 
 
