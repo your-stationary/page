@@ -77,9 +77,9 @@ var Footer = `
   </div>
 </div>
  <div class="d-flex flex-column text-muted pt-5 ">
-   <a href="" class="footer-links">Home</a>
-   <a href="" class="footer-links">Contact Us</a>
-   <a href="" class="footer-links">Contact Us</a>
+   <a href="index.html" class="footer-links">Home</a>
+   <a href="contact.html" class="footer-links">Contact Us</a>
+   <a href="about" class="footer-links">About Us</a>
    <a href="" class="footer-links">Privacy Policy</a>
  </div>
  <div class="text-white d-flex flex-wrap flex-column pt-5">
