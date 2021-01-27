@@ -19,7 +19,7 @@ let productOrder = 1
       if(element.brand == headerVal || element.type == headerVal){
       let minVal = element.strike-element.price
       productSection.innerHTML = productSection.innerHTML+`
-      <div class="product-div ">
+      <div class="product-div" onclick="productDetail(this)">
           <div class="product-img">
             <div class="p-2 px-3 like-sec like-color ">
               <i class="far fa-heart"></i>
@@ -63,7 +63,7 @@ let productOrder = 1
         }
          let minVal = element.strike-element.price
       productSection.innerHTML = productSection.innerHTML+`
-      <div class="product-div" style="order:${productOrder};">
+      <div class="product-div" style="order:${productOrder};" onclick="productDetail(this)">
           <div class="product-img">
             <div class="p-2 px-3 like-sec like-color ">
               <i class="far fa-heart"></i>
@@ -97,3 +97,10 @@ document.querySelector('.product-section-spinner').style.display="none"
 }
 
 productRendering()
+
+const productDetail = (ele)=>{
+  hiddenForm2 = document.querySelector('.hidden-form')
+  hiddenForm2.querySelector('input').value = ele.childNodes[3].childNodes[1].innerText
+  hiddenForm2.submit()
+  
+}
