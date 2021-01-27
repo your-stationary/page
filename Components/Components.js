@@ -2,9 +2,13 @@ var Header = `
 <div class="logo">
     <img src="images/logo.png"  >
 </div>
-<div class=" search-bar p-2 pl-3 d-flex justify-content-between border ">
-    <input type="text" class="border-0">
-    <img src="images/search.svg" class="search">
+<div class="search-bar-parent">
+    <div class=" search-bar p-2 pl-3 d-flex justify-content-between border ">
+      <input type="text" onkeyup="filterCheck(this)" value="" class="border-0">
+      <img src="images/search.svg" class="search">
+    </div>
+    <div class="d-flex flex-column suggestions">
+    </div>
 </div>
 <div class="order d-flex flex-column align-items-center">
     <span class="h6">Order Online or Call now </span>
@@ -19,20 +23,20 @@ var Nav= `
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Brands
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <span class="dropdown-item">Deer</span>
-              <span class="dropdown-item">Dollar</span>
-              <span class="dropdown-item">Giatto</span>
-              <span class="dropdown-item">Piano</span>
-              <span class="dropdown-item">Picasso</span>
-              <span class="dropdown-item">Nike</span>
-              <span class="dropdown-item">Puma</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Deer</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Dollar</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Giatto</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Piano</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Picasso</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Nike</span>
+              <span class="dropdown-item" onclick="redirectProduct(this)">Puma</span>
             </div>
           </li>
         <li class="nav-item dropdown ">
@@ -40,15 +44,13 @@ var Nav= `
               Products
             </a>
             <div class="dropdown-menu  text-wrap" aria-labelledby="navbarDropdownMenuLink">
-                <span class="dropdown-item">Staplers</span>
-                <span class="dropdown-item">Bags</span>
-                <span class="dropdown-item">Pen</span>
-                <span class="dropdown-item">Pencil</span>
-                <span class="dropdown-item">Pointer </span>
-                <span class="dropdown-item">Glitter </span>
-                <span class="dropdown-item">Markers </span>
-                <span class="dropdown-item">scale</span>
-                <span class="dropdown-item">water color</span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Staples</span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Bag</span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Pen</span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Pencil</span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Pointer </span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Glitter </span>
+                <span class="dropdown-item" onclick="redirectProduct(this)">Marker </span>
             </div>
           </li>
 
@@ -56,7 +58,7 @@ var Nav= `
           <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
         </li>
        
       </ul>

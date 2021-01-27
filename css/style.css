@@ -28,11 +28,32 @@ header img{
 .search{
     width: 30px;
 }
+.search-bar-parent{
+    width: 40vw
+    
+}
 .search-bar{
     border-radius:1000px;
-    width: 40vw;
+    width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
-    
+    position: relative;
+}
+.suggestions{
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    width: 40vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+}
+.suggestions span{
+    padding: 10px;
+    cursor:pointer;
+    display: none;
+}
+.suggestions span:hover{
+    background-color: rgb(248, 248, 248);
 }
 .search-bar input{
     width: 80%;
@@ -78,16 +99,20 @@ header img{
     display: flex;
     overflow-x: auto;
     position: relative;
+    scroll-behavior: smooth;
 }
 .fa-arrow-left{
-    left: 0 !important;
+    left: 20px !important;
 }
 .fa-arrow-right{
-    right: 0 !important;
+    right: 20px !important;
+}
+.slider-parent{
+    position: relative;
 }
 .fa-arrow-right,.fa-arrow-left{
     position: absolute;
-    top: 40%;
+    top: 45%;
     background-color: rgba(0, 0, 0, 0.212);
     color: white;
     padding: 10px;
@@ -130,9 +155,11 @@ header img{
 .product-img{
     width: 100%;
     overflow: hidden;
+    height: 300px;
 }
 .product-img img{
     width: 100%;
+    height: 100%;
     transition: 1s;
 }
 
@@ -202,8 +229,11 @@ header img{
     justify-content: center;
     padding-bottom: 30px;
   }
-  .search-bar{
+  .search-bar-parent{
       width: 100%;
+  }
+  .suggestions{
+    width: 85vw;
   }
   .order{
       display: none !important;
