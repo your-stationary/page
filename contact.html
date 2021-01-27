@@ -23,7 +23,8 @@
     }
 
     .fa-map-marker,
-    .fa-phone,.fa-envelope {
+    .fa-phone,
+    .fa-envelope {
         background-color: rgb(42, 42, 42);
         color: white;
         padding: 12px 15px;
@@ -33,8 +34,27 @@
     .fa-phone {
         padding: 17px;
     }
-    .fa-envelope{
+
+    .fa-envelope {
         padding: 17px;
+    }
+
+    .Message {
+        width: 100%;
+    }
+
+    .rightContainer {
+        width: 600px;
+    }
+    .Msginput{
+        border: none;
+        border-bottom: 2px solid black;
+        margin: 10px 0px;
+        padding: 10px 3px;
+    }
+    .send-btn{
+        width: 100px;
+        margin: 10px 0px;
     }
 </style>
 
@@ -65,7 +85,17 @@
                 </div>
             </div>
         </div>
-        <div class="col-6"> </div>
+        <div class="col-6 p-5">
+            <div class="bg-light p-4 rightContainer">
+                <h3 class=" font-weight-bold "> Send Message </h3>
+                <form action="" class="d-flex flex-column Message ">
+                    <input type=" text" placeholder="Full Name" class="bg-transparent Msginput">
+                    <input type=" text" placeholder=" Email" class="bg-transparent Msginput">
+                    <input type=" text" placeholder=" Type Your Message" class="bg-transparent Msginput">
+                    <input type="Submit" value="send" class=" form-control btn-primary rounded-0 send-btn" >
+                </form>
+            </div>
+        </div>
     </div>
 
 
