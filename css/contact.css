@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        background-color: rgb(245, 243, 243);
+        background-image: url('../images/Contactusbg.jpg')
+    }
+
+    .fa-map-marker,
+    .fa-phone,
+    .fa-envelope {
+        background-color: rgb(42, 42, 42);
+        color: white;
+        padding: 12px 15px;
+        border-radius: 50%;
+    }
+
+    .fa-phone {
+        padding: 17px;
+    }
+
+    .fa-envelope {
+        padding: 17px;
+    }
+
+    .Message {
+        width: 100%;
+    }
+    .leftContainer{
+        width: 100%
+    }
+    .rightContainer {
+        width: 100%
+    }
+
+    .Msginput {
+        border: none;
+        border-bottom: 2px solid black;
+        margin: 10px 0px;
+        padding: 10px 3px;
+    }
+
+    .send-btn {
+        width: 100px;
+        margin: 10px 0px;
+    }
+
+    @media screen and (max-width:918px){
+        .mid-container {
+           flex-direction: column;
+           align-items: center
+        }
+        .leftContainer{
+            padding-left: 0px !important;
+        }
+        .rightContainer{
+            margin: 0 !important;
+        }
+    }
+    @media screen and (max-width:406px){
+     
+        .leftContainer div{
+            margin-left: 10px !important;
+        }
+       
+        .leftContainer div div{
+            margin-right: 10px !important;
+        }
+    }

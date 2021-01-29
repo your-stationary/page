@@ -1,12 +1,14 @@
 async function productRendering(){
-let headerVal = window.location.search.split("=")
+let headerVal
+if(window.location.search !=""){
+ headerVal = window.location.search.split("=")
 
 // url decoding here 
 headerVal= headerVal[1]
 headerVal = headerVal.toLowerCase()
 headerVal =headerVal.split("+").join(" ")
 headerVal =headerVal.split("%2f").join("/")
-console.log(headerVal) 
+}
 
 let productSection = document.querySelector('.product-section')
 let typeOfProduct
@@ -93,13 +95,13 @@ let productOrder = 1
       }
       });
   });
-document.querySelector('.product-section-spinner').style.display="none"
+    document.querySelector('.product-section-spinner').style.display="none"
 }
 
 productRendering()
 
 const productDetail = (ele)=>{
-  hiddenForm2 = document.querySelector('.hidden-form')
+  hiddenForm2 = document.querySelector('.second-hidden-form')
   hiddenForm2.querySelector('input').value = ele.childNodes[3].childNodes[1].innerText
   hiddenForm2.submit()
   

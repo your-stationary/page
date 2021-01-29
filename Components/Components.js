@@ -1,7 +1,7 @@
 var Header = `
-<div class="logo">
+<a href="index.html" class="logo">
     <img src="images/logo.png"  >
-</div>
+</a>
 <div class="search-bar-parent">
     <div class=" search-bar p-2 pl-3 d-flex justify-content-between border ">
       <input type="text" onkeyup="filterCheck(this)" value="" class="border-0">
