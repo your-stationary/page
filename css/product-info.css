@@ -1,0 +1,19 @@
+.product-info-img{
+    width: 400px
+}
+.info-span{
+    line-height:2;
+}
+
+@media screen and (max-width:842px){
+    .product-info-img{
+        width: 100%
+    }
+    .info-main-div{
+        flex-direction: column;
+    }
+    .right-container{
+        padding: 10px !important;
+        margin: 0px !important;
+    }
+}

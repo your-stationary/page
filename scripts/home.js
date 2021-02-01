@@ -7,7 +7,7 @@ fetch('data/product.json')
       if(element.like > 4){
       let minVal = element.strike-element.price
       slider.innerHTML = slider.innerHTML+`
-      <div class="product-div ">
+      <div class="product-div " onclick="productDetail(this)">
           <div class="product-img">
             <div class="p-2 px-3 like-sec like-color ">
               <i class="far fa-heart"></i>
