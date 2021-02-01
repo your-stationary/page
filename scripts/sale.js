@@ -6,7 +6,7 @@ fetch('data/product.json')
     data.forEach(element => {
         let minVal = element.strike-element.price
         let finalVal = Math.round(minVal/element.strike*100)
-        if(finalVal >=0){
+        if(finalVal >=40){
             saleContainer.innerHTML = saleContainer.innerHTML+`
             
             <div class="product-div " onclick="productDetail(this)">
