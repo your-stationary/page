@@ -4,6 +4,27 @@
 .info-span{
     line-height:2;
 }
+.star-outer{
+    position: relative;
+}
+.star-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.star-outer::after{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: rgb(202, 202, 202);
+}
+.star-inner::after{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: rgb(255, 187, 0);
+}
 
 @media screen and (max-width:842px){
     .product-info-img{

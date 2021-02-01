@@ -60,6 +60,9 @@ var Nav= `
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary d-flex align-items-start" href="sale.html">Sale <span class="badge badge-primary ml-1">new<span></a>
+        </li>
        
       </ul>
     </div>
