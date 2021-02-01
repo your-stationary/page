@@ -23,7 +23,7 @@ fetch('data/product.json')
                 <strike class="h7 text-muted">${element.strike}</strike>
               </div>
               <div class="px-2">
-                <span class=" h6 dark-pink font-weight-bold">${Math.round(minVal/element.strike*100)} off</span>
+                <span class=" h6 dark-pink font-weight-bold">${Math.round(minVal/element.strike*100)}% off</span>
               </div>
             </span>
             <div class="d-flex justify-content-between mt-1">
