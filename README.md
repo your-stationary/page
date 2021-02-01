@@ -1,2 +1,2 @@
 # your-stationary
-https://your-stationary/page
+https://your-stationary.github.io/page
