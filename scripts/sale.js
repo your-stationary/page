@@ -1,8 +1,6 @@
 let saleContainer = document.querySelector('.sale-container')
 
-fetch('data/product.json')
-.then(response =>response.json())
-.then(function(data){
+
     data.forEach(element => {
         let minVal = element.strike-element.price
         let finalVal = Math.round(minVal/element.strike*100)
@@ -38,4 +36,3 @@ fetch('data/product.json')
             `
         }
     });
-})

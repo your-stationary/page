@@ -1,13 +1,10 @@
 // product fetch code
 slider = document.querySelector('.slider')
-fetch('data/product.json')
-  .then(response => response.json())
-  .then(function(data){
     data.forEach(element => {
       if(element.like > 4){
       let minVal = element.strike-element.price
       slider.innerHTML = slider.innerHTML+`
-      <div class="product-div " onclick="productDetail(this)">
+      <div class="product-div " onclick="productDetail(this)" data-aos="zoom-in">
           <div class="product-img">
             <div class="p-2 px-3 like-sec like-color ">
               <i class="far fa-heart"></i>
@@ -34,7 +31,6 @@ fetch('data/product.json')
         </div>
       `}
     });
-  });
 
 // timer script Here
 

@@ -5,13 +5,12 @@
     }
 
     body {
-        background-color: rgb(245, 243, 243);
-        background-image: url('../images/Contactusbg.jpg')
+        background-color: rgb(255, 255, 255);
     }
 
     .fa-map-marker,
     .fa-phone,
-    .fa-envelope {
+    .fa-envelope-2 {
         background-color: rgb(42, 42, 42);
         color: white;
         padding: 12px 15px;
@@ -48,6 +47,11 @@
         margin: 10px 0px;
     }
 
+    .map-area{
+        width: 100%;
+        height: 300px;
+        margin-top: 40px;
+    }
     @media screen and (max-width:918px){
         .mid-container {
            flex-direction: column;

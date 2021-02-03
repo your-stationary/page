@@ -9,9 +9,7 @@ headerVal =headerVal.split("%2f").join("/")
 let section = document.querySelector('.info-main-div')
 let starInner = document.querySelector('.star-inner')
 
-fetch('data/product.json')
-.then(response => response.json())
-.then(function(data){
+
 data.forEach(function(element) {
 element.name = element.name.toLowerCase()
 if(element.name==headerVal){
@@ -42,5 +40,4 @@ section.innerHTML = section.innerHTML+`
 `
 console.log(element.rating)
 }
-});
 });

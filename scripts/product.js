@@ -13,9 +13,7 @@ headerVal =headerVal.split("%2f").join("/")
 let productSection = document.querySelector('.product-section')
 let typeOfProduct
 let productOrder = 1
- await fetch('data/product.json')
-  .then(response => response.json())
-  .then(function(data){
+
     data.forEach(element => {
       element.name = element.name.toLowerCase()
       if(element.brand == headerVal || element.type == headerVal){
@@ -52,11 +50,8 @@ let productOrder = 1
         typeOfProduct = element.type
       }
     });
-  });
 
-  await fetch('data/product.json')
-  .then(response => response.json())
-  .then(function(data){
+ 
     data.forEach(element => {
       element.name = element.name.toLowerCase()
       if(element.type == typeOfProduct){
@@ -94,7 +89,6 @@ let productOrder = 1
       productOrder=1
       }
       });
-  });
     document.querySelector('.product-section-spinner').style.display="none"
 }
 
