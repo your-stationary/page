@@ -15,7 +15,7 @@ element.name = element.name.toLowerCase()
 if(element.name==headerVal){
 let minVal = element.strike-element.price
 section.innerHTML = section.innerHTML+`
-<img src="${element.src}" class="product-info-img">
+<img src="${element.src}" class="product-info-img" id="zoom_01"  data-zoom-image="${element.src}">
 <div class="pl-4 ml-5 d-flex flex-column right-container">
   <h3 class="font-weight-bold">${element.name}</h3>
   <div class="mt-4 mb-2">
@@ -40,4 +40,9 @@ section.innerHTML = section.innerHTML+`
 `
 console.log(element.rating)
 }
+});
+
+
+$("#zoom_01").ezPlus({
+  scrollZoom:true
 });

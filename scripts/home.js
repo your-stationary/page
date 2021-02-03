@@ -13,7 +13,7 @@ slider = document.querySelector('.slider')
             <img src="${element.src}">
           </div>
           <div class="d-flex flex-column mx-3 pb-3 pt-2 border-top">
-            <span class="  pb-2 product-text">${element.name}</span>
+            <span class="  pb-2 product-text" >${element.name}</span>
             <span class=" font-weight-bold text-primary d-flex align-items-center ">
               <div>
                 <span class="h5 font-weight-bold">Rs.${element.price}</span>
