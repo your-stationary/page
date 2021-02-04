@@ -17,8 +17,16 @@
 <body >
   <header class="header bg-white d-flex align-items-center justify-content-between py-3 px-4 flex-wrap"></header>
   <nav class=" nav navbar navbar-expand-lg navbar-light bg-light pl-4 py-1"></nav>
-  
-  <div class="product-section  d-flex flex-wrap  justify-content-center">
+
+
+  <div class="compare-control p-3 px-4 pr-md-4 flex-wrap d-flex align-items-center justify-content-between">
+    <button class="btn btn-primary compare-control-btn" onclick="compareProductPost()">
+      Compare( 0 of 2 )</button>
+    <span class="text-danger compare-control-alert font-weight-bold">
+      You can compare only 4 products at a time <i class="fas fa-exclamation-circle"></i>
+    </span>
+  </div>
+  <div class="product-section  d-flex flex-wrap  justify-content-center ">
     
     <div class="product-section-spinner">
       <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
@@ -37,6 +45,11 @@
   <form action="product-info.html" class="second-hidden-form" method="GET" style="display: none;">
     <input type="text" name="product" value="">
   </form>
+
+  <form action="compare.html" class="third-hidden-form" method="GET" style="display: none;">
+    <input type="text" name="product" value="">
+  </form>
+  
   <!-- -->
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -48,6 +61,7 @@
   <script src="scripts/components.render.js"></script>
   <script src="scripts/product.js"></script>
    <script src="scripts/nav.js"></script>
+   <script src="scripts/compare.js"></script>
 
 
 </html>

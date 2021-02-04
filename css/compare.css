@@ -1,0 +1,35 @@
+
+.compare-div{
+    display: flex;
+}
+.compare-div img{
+    margin: 20px;
+    width: 60%;
+}
+.compare-table{
+    width: 100%;
+}
+.some{
+    width: 100%;
+}
+
+.first-div{
+    background-color:#f4f5f9;
+    border-right: 1px solid rgb(219, 219, 219);
+}
+.third-div{
+    border-left: 1px solid rgb(219, 219, 219);
+    margin: 0;
+}
+.second-div{
+    margin: 0;
+}
+.strike-color{
+    font-size: 14px !important;
+    color: rgb(122, 122, 122) !important;
+    margin-left: 2px;
+}
+.fa-angle-double-right{
+    color: rgb(0, 102, 255);
+    margin-right: 6px;
+}

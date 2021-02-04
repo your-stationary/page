@@ -295,7 +295,7 @@ var data = [
         "like":"3.2",
         "price":"50",
         "strike":"120",
-        "left":"22",
+        "left":"7",
         "brand":"giatto",
         "sale":true ,
         "rating":"3.5",
