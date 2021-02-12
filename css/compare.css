@@ -33,3 +33,21 @@
     color: rgb(0, 102, 255);
     margin-right: 6px;
 }
+
+@media screen and (max-width:634px){
+    .compare-parent-div{
+        padding: 0px !important;
+    }
+    .first-div{
+        width: 200px;
+    }
+    .first-div{
+        padding: 2px !important;
+        padding-top: 10px !important;
+        word-break: break-all;
+        display: flex;
+        align-items: center;
+        font-size: 12px !important;
+    }
+   
+}

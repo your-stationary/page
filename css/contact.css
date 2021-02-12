@@ -52,6 +52,9 @@
         height: 300px;
         margin-top: 40px;
     }
+    .Errors{
+        display: none;
+    }
     @media screen and (max-width:918px){
         .mid-container {
            flex-direction: column;

@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Contact Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=" stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css "
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2 " crossorigin="anonymous ">
     <script src="https://kit.fontawesome.com/b690895109.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="" type="image/x-icon" class="favicon">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
 
@@ -47,12 +48,17 @@
         <div class="p-5  mr-4 rightContainer bg-light">
                 <h3 class=" font-weight-bold "> Send Message </h3>
                 <form action="" class="d-flex flex-column Message ">
-                    <input type=" text" placeholder="Full Name" class="bg-transparent Msginput">
-                    <input type=" text" placeholder=" Email" class="bg-transparent Msginput">
-                    <input type=" text" placeholder=" Type Your Message" class="bg-transparent Msginput">
-                    <input type="Submit" value="send" class=" form-control btn-primary rounded-0 send-btn">
+                    <input type=" text" placeholder="Full Name" class="bg-transparent Msginput nameInput">
+                    <span class="h6 text-danger nameErr Errors" ><i class="fas fa-exclamation-circle"></i> Please Enter Your Name </span>
+                    <input type=" text" placeholder=" Email" class="bg-transparent Msginput mailInput">
+                    <span class="h6 text-danger mailErr Errors" ><i class="fas fa-exclamation-circle"></i> Please Enter Your Email Address </span>
+                    <input type=" text" placeholder=" Type Your Message" class="bg-transparent Msginput msgInput">
+                    <span class="h6 text-danger msgErr Errors" ><i class="fas fa-exclamation-circle"></i> Please Enter Your Message</span>
+            
                 </form>
-        </div>
+                <input type="Submit" value="send" class=" form-control btn-primary rounded-0 send-btn">
+                <span class="h6 text-success sentMsg Errors"><i class="fas fa-check"></i> Message Sent Successfully  </span>
+            </div>
     </div>
 
 
@@ -67,8 +73,53 @@
 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="data/product.json"></script>
 <script src="Components/Components.js"></script>
 <script src="scripts/components.render.js"></script>
  <script src="scripts/nav.js"></script>
-
+<script>
+    let nameInput  = document.querySelector('.nameInput')
+    let mailInput  = document.querySelector('.mailInput')
+    let msgInput  = document.querySelector('.msgInput')
+    let validCount = 0
+    document.querySelector('.send-btn').onclick =()=>{
+        validCount=0
+        if(nameInput.value ==""){
+            document.querySelector('.nameErr').style.display="block"
+        }
+        else{
+            document.querySelector('.nameErr').style.display="none"
+            validCount++
+        }
+        
+        if(mailInput.value ==""){
+            document.querySelector('.mailErr').style.display="block"
+        }
+        else if(mailInput.value.indexOf('@')==-1){
+            document.querySelector('.mailErr').innerHTML = `<i class="fas fa-exclamation-circle"></i> Please Enter Valid Email Address (include @ ...) `
+            document.querySelector('.mailErr').style.display="block"
+        }
+        else{
+            document.querySelector('.mailErr').style.display="none"
+            validCount++
+        }
+        if(msgInput.value ==""){
+            document.querySelector('.msgErr').style.display="block"
+        }
+        else if(msgInput.value.length<20){
+            document.querySelector('.msgErr').innerHTML=`<i class="fas fa-exclamation-circle"></i> Message contain atleast 20 characters `
+            document.querySelector('.msgErr').style.display="block"
+        }
+        else{
+            document.querySelector('.msgErr').style.display="none"
+            validCount++
+        }
+        if(validCount ==3){
+            nameInput.value=""
+            mailInput.value=""
+            msgInput.value=""
+            document.querySelector('.sentMsg').style.display="block"
+        }
+    }
+</script>
 </html>

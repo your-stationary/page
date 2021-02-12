@@ -16,7 +16,7 @@ let productOrder = 1
     
     data.forEach(element => {
       element.name = element.name.toLowerCase()
-      if(element.brand == headerVal || element.type == headerVal){
+      if(element.brand == headerVal || element.type == headerVal || headerVal == "view more" && element.sale ==true || headerVal == "salenew" && element.sale ==true){
       let minVal = element.strike-element.price
       productSection.innerHTML = productSection.innerHTML+`
       <div class="product-div">
@@ -26,7 +26,7 @@ let productOrder = 1
             <span class=" h6">${element.like}k</span>
           </div>
           <div class="h6 text-muted m-0 d-flex align-items-center ">
-            <label for="compare" class="m-0 mr-1">Compare</label>
+            <label " class="m-0 mr-1">Compare</label>
             <input class="compare-checkbox" id="compare" type="checkbox" onchange="compareProducts(this)">
           </div>
         </div>
@@ -76,7 +76,7 @@ let productOrder = 1
           <span class=" h6">${element.like}k</span>
         </div>
         <div class="h6 text-muted m-0 d-flex align-items-center ">
-          <label for="compare" class="m-0 mr-1">Compare</label>
+          <label for="" class="m-0 mr-1">Compare</label>
           <input class="compare-checkbox" id="compare" type="checkbox" onchange="compareProducts(this)">
         </div>
       </div>

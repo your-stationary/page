@@ -33,13 +33,13 @@ async function compareFetchProduct() {
     disfirstval = storeArr[4]-storeArr[3]
     dissectval = storeArr[13]-storeArr[12]
 
-    let firstStock = "InStock"
-    let secondStock = "InStock"
+    let firstStock = `<span class="text-success">InStock</span>`
+    let secondStock = `<span class="text-success">InStock</span>`
     if(storeArr[5]==0){
-        firstStock = "Not InStock"
+        firstStock = `<span class="text-danger">Not InStock</span>`
     }
     if(storeArr[14]==0){
-        secondStock = "Not InStock"
+        secondStock = `<span class="text-danger">Not InStock</span>`
     }
     compareTable.innerHTML = `
     

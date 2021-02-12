@@ -61,7 +61,7 @@ var Nav= `
           <a class="nav-link" href="contact.html">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-primary d-flex align-items-start" href="sale.html">Sale <span class="badge badge-primary ml-1">new<span></a>
+          <span  class="nav-link text-primary d-flex align-items-start" onclick="redirectProduct(this)">Sale <span class="badge badge-primary ml-1">new<span></span>
         </li>
        
       </ul>
@@ -74,20 +74,24 @@ var Footer = `
   <img src="images/logo.png" >
   <span class="text-muted pl-3 mt-3">Contact Us On </span> 
   <div class="text-muted pl-3 h5">
-   <i class="fab fa-facebook px-1"></i>
-   <i class="fab fa-whatsapp px-1"></i>
-   <i class="far fa-envelope px-1"></i>
+    <a href=""><i class="fab fa-facebook px-1 text-muted "></i></a>
+    <a href=""><i class="fab fa-whatsapp px-1 text-muted "></i></a>
+    <a href=""><i class="far fa-envelope px-1 text-muted "></i></a>
+   
   </div>
 </div>
  <div class="d-flex flex-column text-muted pt-5 ">
    <a href="index.html" class="footer-links">Home</a>
    <a href="contact.html" class="footer-links">Contact Us</a>
-   <a href="about" class="footer-links">About Us</a>
+   <a href="about.html" class="footer-links">About Us</a>
    <a href="" class="footer-links">Privacy Policy</a>
  </div>
  <div class="text-white d-flex flex-wrap flex-column pt-5">
-   <label class="text-muted-3">Enter Your Email Address</label>
-   <input type="text" placeholder="News Letter">
+   <label class="text-muted bg-transparent">Enter Your Email Address</label>
+   <span class="footer-span">
+     <input type="text" placeholder="News Letter">
+     <button class="h6 text-muted  p-2">Send</button>
+   </span>
    <span class="text-muted-2 mt-2">Call Now</span>
    <span class="text-muted-2 ">000 348 723</span>
  </div>

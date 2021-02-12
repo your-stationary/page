@@ -1,3 +1,4 @@
+document.querySelector('.favicon').href="images/favicon.png"
 
 let  hiddenForm = document.querySelector('.hidden-form')
 const redirectProduct = (text)=>{
@@ -31,4 +32,16 @@ const filterCheck=(element)=>{
 			}
     }
     }       
+}
+
+
+// footer js 
+
+document.querySelector('.footer-span>button').onclick=()=>{
+    document.querySelector('.footer-span>input').value=""
+}
+document.querySelector('.footer-span>input').onkeypress =(e)=>{
+    if(e.key=="Enter"){
+        document.querySelector('.footer-span>input').value=""
+    }
 }
