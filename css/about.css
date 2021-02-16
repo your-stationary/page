@@ -1,0 +1,34 @@
+.about-banner{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    position: relative;
+    overflow-y: hidden;
+}
+.about-banner::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-banner img{
+    width: 100%;
+}
+
+.about-banner div{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 2;
+    color: white;
+}
+.about-banner p{
+    color: rgb(196, 196, 196);
+}
