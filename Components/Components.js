@@ -84,7 +84,6 @@ var Footer = `
    <a href="index.html" class="footer-links"><i class="fas fa-angle-double-right text-muted"></i> Home</a>
    <a href="contact.html" class="footer-links"><i class="fas fa-angle-double-right text-muted"></i> Contact Us</a>
    <a href="about.html" class="footer-links"><i class="fas fa-angle-double-right text-muted"></i> About Us</a>
-   <a href="" class="footer-links"><i class="fas fa-angle-double-right text-muted"></i> Privacy Policy</a>
  </div>
  <div class="text-white d-flex flex-wrap flex-column pt-5">
    <label class="text-muted bg-transparent">Enter Your Email Address</label>

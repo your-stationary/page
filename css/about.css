@@ -32,3 +32,13 @@
 .about-banner p{
     color: rgb(196, 196, 196);
 }
+.about-para{
+}
+.about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 60%;
+}
